@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>formularioDGT</title>
+</head>
+<body>
+    <h1>CANVI DE TITULARITAT I NOTIFICACIO DE VENDA DE VEHICLES</h1>
+
+
+    <form>
+
+        <input type="submit" value="IMPRIMIR">
+
+        <fieldset>
+        <label for="canvi"> CANVI DE TITULARITAT</label>
+        <input type="radio" id="canvi" name="vendatit" value="CanviTitularitat">
+
+        <label for="notificacio"> NOTIFICACIO DE VENDA</label>
+        <input type="radio" id="notificacio" name="vendatit" value="NotificacioVenda">
+        </fieldset>
+
+
+    <fieldset>
+        <legend>DADES DEL VEHICLE</legend>
+        <label for="matricula">Matricula: </label>
+        <input type="text" id="matricula" name="nomMatricula" >
+        <label for="datamatriculat">Data de matriculacio (dd/mm/aaaa):</label>
+        <input type="date" id="datamatriculat" name="datamatriculacio">
+
+        <label for="destinaciovehicle">Servei al qual destineu el vehìcle:</label>
+        <select name="destino" id="destinaciovehicle">
+            <option value="A-00">A-00 Publico Sin especificar </option>
+            <option value="A-001">A-O1 Alquiler SIN conductor</option>
+            <option value="A-O2">A-02 Alquiler CON conductor</option>
+            <option value="A-O3">A-03 Aprendizaje conduccion</option>
+            <option value="A-O4">A-04 Taxi</option>
+        </select>
+        <label for="CET">Codi CET (Codi Electronic de transferencia):</label>
+        <input type="text" id="CET" name="codi" >
+        <label for="CEMA">Codi CEMA (Codi Electronic de Maquinaria Agricola):</label>
+        <input type="text" id="CEMA" name="codi">
+
+        <label for="color">Color del vehicle</label>
+        <input type="color" id="color" name="color del vehiculo">
+
+        <label for="foto">Foto del vehicle</label>
+        <input type="file" id="foto" name="foto del vehiculo">
+
+    </fieldset>
+
+
+    <fieldset>
+        <legend> NOU DOMICILI DEL VEHICLE (domicili d'empadronament del comprador del vehicle)</legend>
+        <label for="tipus">Tipus de via:</label>
+        <input type="text" id="tipus" name="tipusVia">
+
+        <label for="nomvia">Nom de la via:</label>
+        <input type="text" id="nomvia" name="nomvia">
+
+        <label for="number">Numero:</label>
+        <input type="number" min="0" id="number" name="numero">
+
+        <label for="bloc">Bloc:</label>
+        <input type="text" id="bloc" name="bloque">
+
+        <label for="portal">Portal:</label>
+        <input type="text"  id="portal" name="porton">
+
+        <label for="escala">Escala:</label>
+        <input type="number" min="0" id="escala" name="escalera">
+
+        <label for="planta">Planta:</label>
+        <input type="text" id="planta" name="piso">
+
+        <label for="porta">Porta:</label>
+        <input type="text" id="porta" name="puerta">
+
+        <label for="KM">KM:</label>
+        <input type="number" min="0" id="KM" name="medida">
+
+        <label for="codi">Codi postal:</label>
+        <input type="number" min="0" id="codi" name="codi">
+
+        <label for="provincia" >Provincia:</label>
+        <select name="provincias" id="provincia">
+            <option value="albacete">Albacete</option>
+            <option value="alicante">Alicante</option>
+            <option value="baleares">Balears, Illes</option>
+            <option value="barcelona">Barcelona</option>
+        </select>
+
+        <label for="municipio">Municipi:</label>
+        <input type="text" id="municipio" name="municipi">
+
+        <label for="localidad">Localitat:</label>
+        <input type="text" id="localidad" name="localitat">
+
+    </fieldset>
+        <fieldset>
+            <legend>DADES DEL COMPRADOR/ADQUIRENT</legend>
+            <label for="interesada">Persona interessada</label>
+            <input type="radio" id="interesada" name="interessada" value="personaInteresada">
+
+            <label for="compraventa">Compravenda</label>
+            <input type="radio" id="compraventa" name="interessada" value="CompraVenta">
+
+            <label for="Identificacion">NIF/NIE/CIF:</label>
+            <input type="text" id="Identificacion" name="NIF">
+
+            <label for="nacimiento">Data de naixement (dd/mm/aaaa):</label>
+            <input type="date" id="nacimiento" name="fechaNacimiento">
+
+            <label for="razon">Nom/Raó social:</label>
+            <input type="text" id="razon" name="razonsocial">
+
+            <label for="apellido1">Primer cognom:</label>
+            <input type="text" id="apellido1" name="primerapellido">
+
+            <label for="apellido2">Segon cognom:</label>
+            <input type="text" id="apellido2" name="Segundoapellido">
+
+            <label for="IAE">Codi IAE (Impost d'Activitats Econòmiques):</label>
+            <input type="text" id="IAE" name="importActivitats">
+
+            <label for="email">Correu electrònic:</label>
+            <input type="email" id="email" name="correoelectronico">
+
+            <label for="cel">Telèfono:</label>
+            <input type="tel" id="cel" name="telefono">
+
+            <label>Tutela:</label>
+            <label for="menor">Menor d'edat</label>
+            <input type="radio" id="menor" name="causas" value="Menor d'edat">
+            <label for="causas">Altres causes</label>
+            <input type="radio" id="causas" name="causas" value="AltresCauses">
+
+            <label for="tutor">NIF/NIE del tutor:</label>
+            <input type="text" id="tutor" name="docTutor">
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend>DADES DEL VENEDOR/TRANSMISSOR</legend>
+
+            <label for="titular">Titular</label>
+            <input type="radio" id="titular" name="opcion" value="titular">
+            <label for="arrendatari">Compravenda/Posseidor/Arrendatari</label>
+            <input type="radio" id="arrendatari" name="opcion" value="compravenda/poseidor">
+
+            <label for="cif">NIF/NIE/CIF:</label>
+            <input type="text" id="cif" name="documentoidentificacion">
+
+            <label for="social">Nom/Raó social:</label>
+            <input type="text" id="social" name="raosocial">
+
+            <label for="apell1">Primer cognom:</label>
+            <input type="text" id="apell1" name="primerapell">
+
+            <label for="apell2">Segon cognom</label>
+            <input type="text" id="apell2" name="segundoapell">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Altres</legend>
+
+        </fieldset>
+
+        <fieldset>
+            <p>M'oposo a que la Direcció General de Trànsit consulti electrònicament les meves dades personals referides a:</p>
+
+            <label for="padron">Empadronament</label>
+            <input type="checkbox" id="padron" name="oposicio" value="Empadronament">
+
+            <label for=".IAE">IAE.</label>
+            <input type="checkbox" id=".IAE" name="IAE" value="IAE">
+
+            <label for="identidad">Identitat</label>
+            <input type="checkbox" id="identidad" name="identitat" value="Identitat">
+
+        </fieldset>
+
+            <input type="text" name="ciudad">
+            <label>,</label>
+            <input type="text" name="dia">
+            <label>d</label>
+            <input type="month" name="mes">
+
+        <p>Firma del venedor</p>
+        <p>Firma del comprador (Només cal per a canvi de titularitat)</p>
+        <p>Firma de l'empleat públic</p>
+
+        <input type="submit" value="Enviar">
+
+
+    </form>
+
+</body>
+
+</html>
