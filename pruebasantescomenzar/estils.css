@@ -1,3 +1,97 @@
-p {
-    color: rgb(255,20,10);
+a {
+    color: red;
 }
+
+article h4 {
+    color:orange ;
+}
+
+.sale h4 {
+    color: green;
+}
+
+/*tots els enllaços d'un menu i siguin fills directes d'una llista  (li), les pintarem de color blau */
+
+nav li>a {
+    color: blue;
+}
+
+/*menu, articles i footer, color de fons groc*/
+
+nav, article, footer {
+    background-color: yellow;
+}
+
+/*tot el telefons color taronja, emails: color rosa*/
+
+a[href^= "tel:"] {
+    color: orange;
+}
+
+a[href^= "mailto:"] {
+    color: pink;
+}
+
+header>nav:nth-child(2)>ul>li:nth-child(3)>a {
+    color: violet;
+}
+
+
+/*a que conte la libra de gran bretanya de color lila*/
+
+p:nth-child(1) {
+    font-family: 'Rubik Microbe', cursive;
+    color: red;
+    text-align: center;
+    letter-spacing: 10px;
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+p:nth-child(2) {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: green;
+    font-size: 25px;
+    text-align: justify;
+}
+
+@font-face {
+    font-family: "primerafamilia";
+    src: url(./fuentes/Pacifico-Regular.ttf);
+}
+p:nth-child(3) {
+    font-family: 'Pacifico', cursive;
+    word-spacing: 20px;
+    text-decoration: underline;
+    font-weight: bolder;
+    font-style: italic;
+
+}
+
+
+html {
+    font-size: 16px;
+
+}
+div, section {
+    font-size: 60pxº;
+}
+
+h1 {
+    font-size: 3em;
+    color: red
+}
+
+div h2 {
+    font-size: 2em;
+    color: yellow;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: aqua;
+}
+
+
+
+
