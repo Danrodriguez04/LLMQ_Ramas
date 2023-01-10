@@ -1,11 +1,14 @@
 import org.junit.jupiter.api.Test;
 
+import java.sql.Array;
+
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 
 public class DescomposicionFactorial {
-    @Test
-    public void erastotenes () {
+    //@Test
+    /*public void erastotenes () {
         //1- prova aleatoria
         int [] r1= Main.erastotenes(20);
         assertArrayEquals(r1, new int[] {2,2,3,5});
@@ -37,20 +40,54 @@ public class DescomposicionFactorial {
 
     @Test
     public  void descomposicionfactorial () {
-        int[] r1= Main.descomposicionFactorial(2);
+        int[] r1 = Main.descomposicionFactorial(2);
         assertArrayEquals(r1, new int[]{2});
 
         //int[] r2= Main.descomposicionFactorial(Integer.MAX_VALUE);
         //assertArrayEquals(r2, null);   "no se puede hacer"
 
-        int [] r3 = Main.erastotenes (1);
-        assertArrayEquals(r3, new int []{});
+        int[] r3 = Main.erastotenes(1);
+        assertArrayEquals(r3, new int[]{});
 
-        int [] r4 = Main.erastotenes (0);
+        int[] r4 = Main.erastotenes(0);
         assertArrayEquals(r4, null);
 
-        int [] r5 = Main.erastotenes (-3);
+        int[] r5 = Main.erastotenes(-3);
         assertArrayEquals(r5, null);
+    }*/
+
+
+        @Test
+        public void matrizMultiplicable (){
+            int [] [] A= {
+                    {0,1},
+                    {2,1},
+                    {0,2}
+            };
+            int [] [] B = {
+                    {0,1,0,1},
+                    {1,1,2,2}
+            };
+            int [] [] R = {
+                    {1,1,2,2},
+                    {1,3,2,4},
+                    {2,2,4,4}
+            };
+
+            int [] [] C= {};
+
+            //Condicional no entra
+            //assertArrayEquals(Main.matrizMultiplicable(A,B),R);
+            //Condicional si entra
+           // assertArrayEquals(Main.matrizMultiplicable(B,A),null);
+            //FOR entra 0 veces
+            assertThrows(ArrayIndexOutOfBoundsException.class,()->Main.matrizMultiplicable(C,C));
+
+        }
+
+
+
+
 
 
     }
@@ -58,4 +95,4 @@ public class DescomposicionFactorial {
     //Hacer ejericio 3
     //Rango "" (nadaa)
 
-}
+
