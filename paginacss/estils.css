@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 200px;
+    
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 60% 40%;
+
+}
+
+main>section {
+    margin: 80px;
+}
+
+main form {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto ;
+    justify-items: center;
+   
+}
+
+main form div:nth-child(n+3){
+    grid-column: 1 / 3;
+}
+
+main form div {
+    
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+}
+
+main form div label {
+    display: grid;
+    justify-items: center;
+}
+
+
+/*si queremos que salte de linea necesitamos el wrap ( entra en el examen )*/
+/*esta forma es en flex 
+main form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main form>div:nth-child(1), main form>div:nth-child(2){
+    width: 50%;
+}
+
+
+main form :nth-child(n+3){
+    width: 100%;
+}
+
+main form div {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+main form div label {
+    display: flex;
+    justify-content: center;
+}
+*/
+
+
+footer {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    align-items: center;
+    
+}
+
+img {
+    width: 30px;
+}
+
+iframe {
+    width: 100%;
+}
+
+footer>div {
+    display: flex;
+    order: 1;
+}
+

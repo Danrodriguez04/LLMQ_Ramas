@@ -1,25 +1,22 @@
+
 public class CodigosATenerEnCuenta {
 
 
-    public static void main(String[] args) {
+    public static void main ( String  [] args ) {
 
-        char c = 'M';
-        int m =0;
-        boolean x = true ;
-        do {
-            if (! x ){
-                c = 'm';
+        double n1=5 , n2=8 ;
+        n1 = Double . parseDouble ( args [0]);
+        n2 = Double . parseDouble ( args [1]);
+        if ( n1 > n2 ) {
+            System . out . println ( n1 );
+        } else {
+            if ( n1 < n2 ){
+                System . out . println ( n2 );
+            } else {
+                System . out . println ( " Los dos numeros son iguales " );
             }
-            do {
-                m = m *2+1;
-            } while (m <2);
-            x = false ;
-        } while ( c != 'm' );
-        System . out . println ( m );
-
-}
-
-
+        }
+    }
 
     /*public static int[] invertirUnaMatriz() {
 
@@ -38,4 +35,4 @@ public class CodigosATenerEnCuenta {
     }*/
 
 
-            }
+}
