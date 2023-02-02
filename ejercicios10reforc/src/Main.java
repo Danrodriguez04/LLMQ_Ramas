@@ -96,18 +96,99 @@ public class Main {
         System.out.println("la suma de los cuadrados es : " + n2);
     }*/
 
-    public static void main(String[] args) {
+    /*//Escrbir puntuaciones de las notas de un examen y de aqui debemos
+    //sacar la media, la nota maxima, cantidad de estudiantes
+    public static void main(String[] args) throws IOException{
 
-        double contador = 0 ;
-        double puntuacion;
+        float  nota = 4, max= 0, suma = 0 , media ;
+        int contador = 0;
+        float nota_String;
 
 
-        double [] notas= {2.5,3.4,8.9,5,1};
-        System.out.println(notaMaxima(notas));
+        BufferedReader leer= new BufferedReader(new InputStreamReader(System.in));
+
+        while (nota >= 0) {
+            System.out.println("Introduzca nota (para finalizar -1: )");
+
+            // con el siguiente parseFloat (leer.readline), hacemos que introduzca
+            //valores que sean numeros
+            nota_String = Float.parseFloat(leer.readLine());
+
+            //aqui le asignamos a nota el valor de la nota escrito anteriormente
+            nota = nota_String;
+
+            if (nota > 0){
+                suma += nota;
+
+                //con el contador sabemos la cantidad de veces que hemos
+                //puesto una nota, lo que significa que es por cada estudiante
+                contador= contador +1;
+
+                if (nota >max){
+                    max=nota;
+                }
+
+            }
+
+            if (nota == -1){
+                media = suma / contador;
+                System.out.println("la nota maxima es: " + max);
+                System.out.println("La media de las notas de los alumnos es: " + media);
+                System.out.println("Numero de alumnos: " + contador);
+            }
+            if (contador == 0) {
+                System.out.println("No hay notas para validad");
+            }
+        }*/
+
+
+
+    /*Realizar un programa que dado un numero entero introducido por l ́ınea de  ́ordenes,
+calcule y visualice por pantalla la suma y el n ́umero de sus cifras y adem ́as muestre
+el resultado de invertir el orden de sus cifras.*/
+
+    public static void main(String[] args) throws IOException {
+
+        int n, suma = 0, cifras= 0;
+        String numero;
+        String nReves;
+
+        BufferedReader leer = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.println("Escriba el numero: ");
+        n = Integer.parseInt(leer.readLine());
+        //n = Integer.parseInt(args[0]);
+
+
+        System.out.println(n);
+
+        while (n > 0) {
+            cifras++;
+
+            suma += cifras;
+
+
+        }
+
+        System.out.println("la suma de las cifras es");
 
     }
+}
 
-    public static double notaMaxima (double [] notas) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*public static double notaMaxima (double [] notas) {
         double  maxima =notas [0];
 
         for (int i = 0; i < notas.length; i++) {
@@ -125,5 +206,4 @@ public class Main {
             suma +=  notas[i];
         }
         return suma;
-    }
-}
+    }*/

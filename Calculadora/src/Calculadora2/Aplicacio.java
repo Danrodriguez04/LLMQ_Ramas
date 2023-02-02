@@ -1,4 +1,4 @@
-import java.util.Scanner;
+package Calculadora2;
 
 public class Aplicacio {
 

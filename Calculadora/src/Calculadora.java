@@ -1,67 +1,64 @@
-public class Calculadora {
-    private int[] operadorsGeneral1;
-    private int operacioMatematicaGeneral;
+import java.util.Scanner;
 
-    private Operador[] operadorsCalculadora;
+public class Calculadora { 
+    private Terminal terminal;
+    //private int [] operadorsGeneral1;
+    //private  int operacioMatematicaGeneral;
 
-    public Calculadora(){
-        Operador suma = new Operador("SUMA", "+", 1);
-        Operador resta = new Operador("RESTA", "-", 2);
-
-        operadorsCalculadora =new Operador[2];
-        operadorsCalculadora[0] = suma;
-        operadorsCalculadora[1] = resta;
+    public Calculadora (Terminal terminal){
+        this.terminal = terminal;
     }
 
-    public void parse(String input) {
+    public Operacio demanarOperacio (){
+        Terminal terminal = new Terminal();
+        System.out.println("Hash" + terminal.hashCode());
+        //3+2 --> 3 + 2
+
+        String operacio = terminal.input();
 
         //llevar espais en blanc
+        operacio= operacio.replaceAll(" ", "");
 
-        String operacio = input.replaceAll(" ", "");
+        int operacioMatematica= 0;
+        int [] operadors= new int[2];
+        if (operacio.contains("+")){
+            operacioMatematica =1;
+            String[] operadorsStr = operacio.split( "\\+", 0);
 
-        int operacioMatematica = 0;
-        int[] operadors = new int[2];
-
-        for (int i=0; i<this.operadorsCalculadora.length; i++){
-            if (operacio.contains(this.operadorsCalculadora[i].getSimbol())){
-                operacioMatematica = this.operadorsCalculadora[i].getValor();
-                String[] operadorsStr = operacio.split("\\" + this.operadorsCalculadora[i].getSimbol(), 0);
-                for (int j =0; j<operadorsStr.length;j++){
-                    operadors[j] =Integer.parseInt(operadorsStr[j]);
-                }
+            for (int i=0; i<operadorsStr.length;i++){
+                operadors[i] = Integer.parseInt(operadorsStr[i]);
             }
         }
 
+        //operadorsGeneral1 = operadors;
+        //operacioMatematicaGeneral = operacioMatematica;
 
-        /*if (operacio.contains("+")) {
-            operacioMatematica = 1;
-            String[] operadorsStr = operacio.split("\\+", 0);
-
-            for (int i = 0; i < operadorsStr.length; i++) {
-                operadors[i] = Integer.parseInt(operadorsStr[i]);
-            }
-
-        }*/
-        operadorsGeneral1 = operadors;
-        operacioMatematicaGeneral = operacioMatematica;
+        Operacio operacio1 = new Operacio(operacioMatematica,operadors[0],operadors[1]);
+        return operacio1;
 
     }
 
-    public int[] getOperadorsGeneral1(){
-        return operadorsGeneral1;
+   /* public int operar () {
+        if (this.operacioMatematicaGeneral==1){
+            return sumar(this.operadorsGeneral1[0], this.operadorsGeneral1[1]));
+        }
+        return 0;
+    }*/
+
+
+    public void escriureResultat (){
+        terminal.output("Resultat");
+    }
+    public  int operar (int op1, int op2, int operacion){
+        if (operacion==1){
+            return sumar(op1,op2);
+        }
+
+        return 0;
     }
 
-    public void setOperadorsGeneral1 (int[] operadorsGeneral1){
-        this.operadorsGeneral1 = operadorsGeneral1;
+    public  int sumar (int op1, int op2 ){
+        return op1 + op2;
     }
-
-    public int getOperacioMatematicaGeneral (){
-        return operacioMatematicaGeneral;
-    }
-
-    public void setOperacioMatematicaGeneral(int operacioMatematicaGeneral){
-        this.operacioMatematicaGeneral = operacioMatematicaGeneral;
-    }
-
 
 }

@@ -1,3 +1,5 @@
+package Calculadora2;
+
 public class Operador {
     private String nom="SUMAR";
     private String simbol= "+";

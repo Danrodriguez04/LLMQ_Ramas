@@ -1,8 +1,6 @@
 import java.util.Scanner;
 
-public class CalculadoraOld {
-    private static int [] operadorsGeneral1;
-    private static int operacioMatematicaGeneral;
+/*public class CalculadoraOld {
 
     public static void mainOld(String[] args) {
         System.out.println("Hello world!");
@@ -37,19 +35,27 @@ public class CalculadoraOld {
             }
         }
 
-        operadorsGeneral1 = operadors;
-        operacioMatematicaGeneral = operacioMatematica;
+        //operadorsGeneral1 = operadors;
+        //operacioMatematicaGeneral = operacioMatematica;
 
 
 
-    }
-    public static int operar (int op1, int op2, int operacion){
+    }*/
+
+    /*public int operar () {
+        if (this.operacioMatematicaGeneral==1){
+            return sumar(this.operadorsGeneral1[0], this.operadorsGeneral1[1]));
+        }
+        return 0;
+    }*/
+
+   /* public static int operar (int op1, int op2, int operacion){
         if (operacion==1){
             return sumar(op1,op2);
         }
 
         return 0;
-    }
+    }*/
 
     public static int sumar (int op1, int op2 ){
         return op1 + op2;
