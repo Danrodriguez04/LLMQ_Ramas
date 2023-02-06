@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class Calculadora { 
     private Terminal terminal;
+
+    private final int SUMA = 1;  //Magic numbers!!!!
     //private int [] operadorsGeneral1;
     //private  int operacioMatematicaGeneral;
 
@@ -50,7 +52,8 @@ public class Calculadora {
         terminal.output("Resultat");
     }
     public  int operar (int op1, int op2, int operacion){
-        if (operacion==1){
+        //if (operacion==1){
+        if (operacion==SUMA){
             return sumar(op1,op2);
         }
 
