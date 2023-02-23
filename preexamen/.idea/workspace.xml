@@ -4,13 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5538595-f7f6-420c-869b-a40202fa3438" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="5f1e29a2-9d3e-427e-a73b-5fef085264bf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../pruebasantescomenzar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pruebasantescomenzar/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -18,18 +25,18 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2IB4mQ9icCpzOegVwE44Jm2GPyv" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2LfuLAt1upqeejBkEAq1P2qi1oE" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/danielrodriguez/Documents/GS_DAW/LLMQ_Ramas/pruebasantescomenzar&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/danielrodriguez/Documents/GS_DAW/LLMQ_Ramas/preexamen&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -40,34 +47,20 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b5538595-f7f6-420c-869b-a40202fa3438" name="Changes" comment="" />
-      <created>1669641800592</created>
+      <changelist id="5f1e29a2-9d3e-427e-a73b-5fef085264bf" name="Changes" comment="" />
+      <created>1676274399808</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1669641800592</updated>
-      <workItem from="1669641802017" duration="1528000" />
-      <workItem from="1670530288523" duration="652000" />
-      <workItem from="1673267936114" duration="201000" />
-      <workItem from="1676923866378" duration="85000" />
-      <workItem from="1676924496237" duration="16000" />
-      <workItem from="1676925835632" duration="461000" />
-      <workItem from="1676927748566" duration="24000" />
-      <workItem from="1677100933598" duration="131000" />
+      <updated>1676274399808</updated>
+      <workItem from="1676274401177" duration="19000" />
+      <workItem from="1676294413630" duration="2637000" />
+      <workItem from="1676313713968" duration="78000" />
+      <workItem from="1676926298803" duration="665000" />
+      <workItem from="1677101081026" duration="67000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>

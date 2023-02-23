@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //var x = 3;
+
+
+
+
+
+
+    /* Java VS JavaScript
+    * 1- Javascript NO tiene tipo explicito
+    * 2- Javascript es Entorno cliente, java es entorno servidor
+    * 3- Java es compilado, Javascript es interpretados(lee linea a linea y si encuentra un error se para
+    * todos lo lenguajes de script son interpretados)
+    * 4- Java y javascript son C-LIKE (ANSI C)
+    * 5-Javascript esta basado en C y en LISP */
+
+    /*VARIABLES EN JAVASCRIPT
+    * Si sitenen tipos implicitos (el tipo depende del valor)
+    * var x = 2; //NUMBER
+    * var x = false; //BOOLEAN
+    * var x = "hola"; //STRING
+    *
+    *
+    *Los tipos son DINAMICOS
+    *   var x = 2; //NUMBER
+    *   x = "hola";//STRING
+    * */
+
+
+    /*console.log("hola",3,x); //mostrar cosas por pantalla
+    console.table(x)*/
+
+    /*var x =2;
+    var y = 3;
+    var a = "2";
+    var b = "3";
+
+
+    console.log(x+y, a+b, x+y+a+b, a+b+x+y);*/
+
+    /*
+    -CAST es automatico. pero existen funciones que nos permiten transformar
+    "parseInt()" "parseFloat()" entre otros
+
+    TIPOS:
+        -No hay enteros ni floats, hay NUMBER. var x = 2.2;
+        -String. var x = "hola"; var x = 'hola'; //estas dos comillas es lo mismo
+        -Boolean var x = false;
+        -Object. var x = {
+                            nom: 'Joan',
+                            cognom; 'Rodriguez'
+                            }
+        - Null. var x = null;//es un valor valor que se le pone
+        -undefined. var x = undefined; //es un tipo que quiere decir que aquella variable no tiene nada
+
+
+        *ARRAY son objetos. var x = ['hola'];
+        var z; //undefined
+        var z = null; //Tipo null;
+
+     */
+
+
+
+    /*Declara 3 variables, a ,b y c */
+
+    /*var a = 3;
+    var b ="2";
+    var c;
+
+    c=null
+    console.log(c);
+
+    c=a+a
+    console.log(c);
+
+    c=b+b
+    console.log(c);
+
+    c= a+parseInt(b)
+    console.log(c);
+
+    c=""+ a +a;
+    console.log(c);*/
+
+
+
+    /*
+    Operadores: son iguales a java
+        -Aritmeticos: + - * / %
+        -Logicos: && ||
+        -Relacionals: < <= > >= == ===
+        -Negacion: !
+        -Asignacion: =
+
+    if (condicion){
+
+    } else {
+
+    } //son iguales a java
+
+
+    Los bucles y condicionales son iguales a java
+    for (var i = 0; i< 10; i++){
+    }
+    while (condicion){
+    }
+
+     */
+
+
+    /*
+    1- Una mosca volava per la llum
+        a, e, i, o, u
+        ana masca valava par la llam
+        ...
+
+     */
+
+
+   /*
+   3- Funcion que devuelva la diferencia absoluta entre "n" y 51
+   si "n" es mas grande a 51 devolver el triple de la diferencia absoluta
+
+    */
+
+    function diferenciaAbsoluta (n) {
+        return (n<52)?Math.abs(n-51):3*Math.abs(n-51)
+        /*var diferencia = n-51;
+        if (n>51){
+            return diferencia*3;
+        }else {
+            return diferencia
+        }*/
+    }
+    console.log(diferenciaAbsoluta(60))
+
+    /*
+     4- escribir una funcion que devuelva "true" si un numero dado
+   se encuentra entre los 10 y 200. False en otro caso
+     */
+
+    function numeroCondicion (n) {
+        return (n>10 && n<200)?true:false
+        /*if (n >= 10 && n <= 200){
+            return true;
+        }else {
+            return false;
+        }*/
+    }
+    console.log(numeroCondicion(200))
+
+
+    //5- funcion que comprueba si un numero es multiplo de 3 o 7
+
+    function numeroMultiplo (n){
+        if (n%7==0 && n%3==0){
+            return "el numero es multiplo de 7 y 3 "
+        }
+        if (n%3==0){
+            return "el numero es multiplo de 3"
+        }
+        if (n%7==0){
+            return "el numero es multiplo de 7"
+        } else {
+            return "el numero no es multiplo de 7 ni de 3"
+        }
+    }
+    console.log(numeroMultiplo(21))
+
+    // 6- funcion que dado 2 numeros devuelva la suma del rango
+    //P.ex: 3..7 devuelva 3+4+5+6+7
+    function sumaRango (n1, n2){
+
+    }
+
+</script>
+</body>
+</html>

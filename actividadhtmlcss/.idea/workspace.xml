@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5538595-f7f6-420c-869b-a40202fa3438" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e7a1ab76-4902-427f-a69c-cc12bb7ba9c3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../pruebasantescomenzar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pruebasantescomenzar/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,11 +15,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2IB4mQ9icCpzOegVwE44Jm2GPyv" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2M18f6MBaM4h7vEaX4FFG1xVhhV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,7 +25,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/danielrodriguez/Documents/GS_DAW/LLMQ_Ramas/pruebasantescomenzar&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/danielrodriguez/Documents/GS_DAW/LLMQ_Ramas/actividadhtmlcss&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -40,34 +36,18 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b5538595-f7f6-420c-869b-a40202fa3438" name="Changes" comment="" />
-      <created>1669641800592</created>
+      <changelist id="e7a1ab76-4902-427f-a69c-cc12bb7ba9c3" name="Changes" comment="" />
+      <created>1676923827277</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1669641800592</updated>
-      <workItem from="1669641802017" duration="1528000" />
-      <workItem from="1670530288523" duration="652000" />
-      <workItem from="1673267936114" duration="201000" />
-      <workItem from="1676923866378" duration="85000" />
-      <workItem from="1676924496237" duration="16000" />
-      <workItem from="1676925835632" duration="461000" />
-      <workItem from="1676927748566" duration="24000" />
-      <workItem from="1677100933598" duration="131000" />
+      <updated>1676923827277</updated>
+      <workItem from="1676923828390" duration="37000" />
+      <workItem from="1676924512577" duration="611000" />
+      <workItem from="1677100914121" duration="19000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
 </project>

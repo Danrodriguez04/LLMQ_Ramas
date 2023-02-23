@@ -1,0 +1,136 @@
+@font-face {
+    font-family: Phenomena;
+    src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/Phenomena-Regular.otf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Phenomena;
+    src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/Phenomena-Bold.otf);
+    font-weight: bold;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ol{
+    display: grid;
+    grid-template-columns: repeat(18,auto);
+    grid-template-rows: repeat(9,auto);
+    list-style: none;
+    gap: 3px;
+
+
+}
+
+body{
+    background-color: black;
+    font-family: 'Phenomena';
+    font-weight: bold;
+    padding: 10px;
+}
+
+.hydrogen{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    background-color: #bff6ee;
+
+}
+
+#helium {
+    grid-column: 18 / 19;
+    grid-row: 1 / 2;
+    color: yellow;
+}
+
+.noble-gas{
+    grid-column: 18 / 19;
+    background-color: yellow;
+}
+
+.alkali {
+    grid-column: 1 / 2;
+    background-color: peachpuff;
+}
+
+.alkaline {
+    grid-column: 2 / 3;
+    background-color: #bbe2bb;
+}
+
+.metalloid{
+    background-color: lightgreen;
+}
+
+#boron{
+    grid-column: 13 / 14;
+}
+
+.polyatomic-non-metal {
+    background-color: red;
+}
+
+.diatomic-nonmetal{
+    background-color: #e7ac5f;
+}
+
+#aluminium {
+    grid-column: 13/14;
+
+}
+
+
+.lanthanide{
+    grid-row: 8 / 9;
+    background-color: lightblue;
+}
+
+.alkaline+.lanthanide{
+    grid-column: 3 / 4;
+    grid-row: 6 / 7;
+}
+.actinide{
+    background-color: lawngreen;
+    grid-row: 9 / 10;
+
+}
+
+
+.alkaline+.actinide{
+    grid-column: 3 / 4;
+    grid-row: 7 / 8;
+}
+
+
+.unknown{
+    background-color: #989696;
+}
+
+#cerium {
+    grid-column: 4 / 5;
+}
+
+#thorium{
+    grid-column: 4 / 5;
+}
+
+ol li {
+    background-color: dodgerblue;
+    border-radius: 2px;
+    padding: 5px 2px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
